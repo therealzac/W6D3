@@ -8,9 +8,7 @@ var View = function (game, $el) {
 };
 
 View.prototype.bindEvents = function () {
-  $(".grid").on("click", ".grid-cell", function(e) {
-    this.makeMove(e);
-  }.bind(this));
+  $(".grid").on("click", ".grid-cell", this.makeMove.bind(this));
 };
 
 View.prototype.makeMove = function (e) {
