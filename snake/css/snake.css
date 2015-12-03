@@ -1,0 +1,30 @@
+ul {
+  list-style: none;
+}
+
+.group {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.grid {
+  width: 800px;
+  height: 800px;
+
+}
+
+.grid-cell {
+  content: "";
+  float: left;
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  font-size: 150px;
+  text-align: center;
+
+}
+
+.snake-segment {
+  background-color: red;
+}
